@@ -3,6 +3,8 @@
   "build": {
     "dockerfile": "Dockerfile"
   },
+  "workspaceMount": "source=${localWorkspaceFolder},target=/root/.roswell/lisp/quicklisp/local-projects/${localWorkspaceFolderBasename},type=bind",
+  "workspaceFolder": "/root/.roswell/lisp/quicklisp/local-projects/${localWorkspaceFolderBasename}",
   "customizations": {
     "vscode": {
       "extensions": [
