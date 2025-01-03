@@ -9,11 +9,13 @@ RUN useradd -m -s /bin/bash ${USER} && \
     chown -R ${USER}:${USER} /home/${USER}
 
 # install tools
+# see. `Building from Source` Section in https://roswell.github.io/Installation.html
 RUN apt-get update && apt-get install -y git build-essential automake libcurl4-openssl-dev && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
 # install Roswell user locally
+# see. https://roswell.github.io/Local-installation.html
 USER ${USER}
 RUN cd $HOME/tmp \
     && git clone -b release https://github.com/roswell/roswell.git \
@@ -22,6 +24,7 @@ RUN cd $HOME/tmp \
     && ./configure --prefix=$HOME/.local/ \
     && make && make install \
     && ~/.local/bin/ros
+
 # add bin path installed by Roswell
 RUN echo 'export PATH="$HOME/.roswell/bin:$PATH"' >> $HOME/.bashrc
 CMD ["bash"]
