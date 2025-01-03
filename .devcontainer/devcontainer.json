@@ -1,5 +1,5 @@
 {
-  "name": "Lisp Development for Mac (arm64)",
+  "name": "Common Lisp Development",
   "build": {
     "dockerfile": "Dockerfile"
   },
