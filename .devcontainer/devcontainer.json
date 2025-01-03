@@ -1,0 +1,14 @@
+{
+  "name": "Lisp Development for Mac (arm64)",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "qingpeng.common-lisp",
+        "streetsidesoftware.code-spell-checker"
+      ]
+    }
+  }
+}
