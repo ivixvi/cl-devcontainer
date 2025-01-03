@@ -1,11 +1,13 @@
 {
   "cSpell.words": [
-    "devcontainers",
+    "defpackage",
     "defun",
     "defvar",
+    "devcontainers",
     "nreverse",
     "numberp",
     "progn",
+    "quicklisp",
     "setf",
     "setq"
   ]
