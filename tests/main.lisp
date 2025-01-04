@@ -1,10 +1,10 @@
-(defpackage :greeting/tests
+(defpackage :greeting/test
   (:use :cl
         :rove
         :greeting))
-(in-package :greeting/tests)
+(in-package :greeting/test)
 
-(rove:deftest greeting-test
+(rove:deftest test-hello
   (testing "hello common lisp"
     (ok (string= (greeting:hello "common lisp") "Hello common lisp! f"))))
 

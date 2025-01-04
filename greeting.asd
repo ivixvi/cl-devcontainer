@@ -2,7 +2,7 @@
   :components ((:file "main"))
   :in-order-to ((test-op (test-op "greeting/test"))))
 
-(asdf:defsystem "greeting/tests"
+(asdf:defsystem "greeting/test"
   :depends-on ("greeting" "rove")
   :pathname "tests/"
   :components ((:file "main"))
