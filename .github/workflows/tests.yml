@@ -26,3 +26,9 @@ jobs:
       - uses: 40ants/run-tests@v2
         with:
           asdf-system: greeting
+          # see. https://github.com/40ants/run-tests?tab=readme-ov-file#custom-test-runner
+          run-tests: |
+            (ql:quickload :greeting/tests)
+
+            (unless (rove:run :greeting/tests)
+              (error "Tests failed"))
