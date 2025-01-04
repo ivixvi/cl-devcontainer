@@ -8,4 +8,4 @@
   (testing "hello common lisp"
     (ok (string= (greeting:hello "common lisp") "Hello common lisp! f"))))
 
-(defun run-test () (rove:run-suite *package*))
+(defun run-test () (rove:run :greeting/test))
