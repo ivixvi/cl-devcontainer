@@ -12,6 +12,11 @@ Common Lisp Development Environments For VSCode
 
 - https://roswell.github.io/
 
+### GitHub Actions
+
+- https://github.com/40ants/setup-lisp
+- https://github.com/40ants/run-tests
+
 ## tests for example package 
 
 ### dependencies install
@@ -25,5 +30,5 @@ ros install rove
 ### Usage 
 
 ```sh
-rove tests/main.lisp
+rove greeting.asd
 ```
