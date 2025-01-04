@@ -25,5 +25,5 @@ ros install rove
 ### Usage 
 
 ```sh
-rove tests/main.lisp
+rove greeting.asd
 ```
