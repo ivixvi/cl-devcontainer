@@ -8,4 +8,6 @@
   (testing "hello common lisp"
     (ok (string= (greeting:hello "common lisp") "Hello common lisp! f"))))
 
-(defun run-test () (rove:run :greeting/tests))
+(defun run-test ()
+  (unless (rove:run :greeting/tests)
+    (error "Tests failed")))
