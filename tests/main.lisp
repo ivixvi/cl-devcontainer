@@ -13,4 +13,4 @@
 
 (rove:deftest test-hello
   (testing "hello common lisp"
-    (ok (string= (greeting:hello "common lisp") "Hello common lisp!d"))))
+    (ok (string= (greeting:hello "common lisp") "Hello common lisp!"))))
