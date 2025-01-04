@@ -29,4 +29,4 @@ jobs:
           # see. https://github.com/40ants/run-tests?tab=readme-ov-file#custom-test-runner
           run-tests: |
             (ql:quickload "greeting/tests")
-            (unless (run-test) (error "Tests failed"))
+            (unless (symbol-call :greeting/tests :run-test) (error "Tests failed"))
