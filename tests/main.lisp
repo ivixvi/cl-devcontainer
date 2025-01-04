@@ -5,9 +5,16 @@
         :greeting))
 (in-package :greeting/tests)
 
-(rove:deftest test-hello
+(rove:deftest test-hello1
   (testing "hello common lisp"
-    (ok (string= (greeting:hello "common lisp") "Hello common lisp!"))))
+    (ok (string= (greeting:hello "common lisp") "Hello common lisp!")))
+   )
+
+(rove:deftest test-hello2
+(testing "ng case"
+    (ng (string= (greeting:hello "common lisp") "Hello world!")))
+ )
+
 
 (defun run-test ()
   (unless
