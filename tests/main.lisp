@@ -1,7 +1,8 @@
 (defpackage :greeting/tests
   (:use :cl
         :rove
-        :greeting))
+        :greeting)
+  (:export :run-test))
 (in-package :greeting/tests)
 
 (defun run-test () (rove:run :greeting/tests))
