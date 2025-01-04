@@ -1,7 +1,6 @@
 (defpackage :greeting/tests
   (:use :cl
         :rove
-        :uiop
         :greeting))
 (in-package :greeting/tests)
 
@@ -11,4 +10,4 @@
 
 (defun run-test ()
   (unless (rove:run :greeting/tests)
-    (uiop:quit 1)))
+    (error "Test Failed")))
