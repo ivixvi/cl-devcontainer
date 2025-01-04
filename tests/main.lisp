@@ -4,7 +4,7 @@
         :greeting))
 (in-package :greeting/tests)
 
-(rove:deftest test-hello1
+(rove:deftest test-hello
   (testing "hello common lisp"
     (ok (string= (greeting:hello "common lisp") "Hello common lisp!"))))
 
