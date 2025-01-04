@@ -6,4 +6,4 @@
   :depends-on ("greeting" "rove")
   :pathname "tests/"
   :components ((:file "main"))
-  :perform (test-op (o c) (symbol-call :greeting/tests :run-test)))
+  :perform (test-op (o c) (symbol-call :greeting/test :run-test)))
