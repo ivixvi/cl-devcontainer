@@ -2,11 +2,10 @@
   (:use :cl
         :rove
         :uiop
-        :greeting)
-  (:export :run-test))
+        :greeting))
 (in-package :greeting/tests)
 
-(rove:deftest greeting-test
+(rove:deftest test-hello
   (testing "hello common lisp"
     (ok (string= (greeting:hello "common lisp") "Hello common lisp!"))))
 
