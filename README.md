@@ -3,12 +3,21 @@ Common Lisp Development Environments For VSCode
 
 ## Reference
 
-### Package System: ASDF
+### Package
+
+- https://www.lispworks.com/documentation/HyperSpec/Body/11_aa.htm
+- https://lispcookbook.github.io/cl-cookbook/packages.html
+
+### Build System: ASDF
 
 - https://asdf.common-lisp.dev/asdf.html
 - 日本語訳: https://privet-kitty.github.io/misc/asdf-ja.html 
 
-### Environments Management: Roswell
+### Package Installer: Quicklisp
+
+- https://www.quicklisp.org/beta/
+
+### Runtime Management: Roswell
 
 - https://roswell.github.io/
 
